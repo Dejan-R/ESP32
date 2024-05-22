@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "err.h": "c",
+        "sys.h": "c",
+        "esp_wifi.h": "c",
+        "nvs_flash.h": "c",
+        "freertos.h": "c",
+        "nvs.h": "c",
+        "esp_crt_bundle.h": "c"
+    }
+}

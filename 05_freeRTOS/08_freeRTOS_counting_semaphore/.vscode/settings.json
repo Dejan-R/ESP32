@@ -1,0 +1,6 @@
+{
+  "files.associations": {
+    "semphr.h": "c",
+    "task.h": "c"
+  }
+}

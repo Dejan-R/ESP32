@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "esp_tls.h": "c",
+        "esp_crt_bundle.h": "c"
+    }
+}
