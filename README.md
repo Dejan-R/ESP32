@@ -1,4 +1,4 @@
-Primjeri zadataka za laboratorijske vježbe temeljene na ESP IDF-u. 
+Primjeri zadataka iz laboratorijskih vježbi temeljenih na ESP IDF-u. 
 
 Za laboratorijske vježbe koristi se razvojna pločica ESP32-DevKitC V4 
 
