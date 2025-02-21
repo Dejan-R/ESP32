@@ -34,7 +34,13 @@ void app_main(void)
    /*esp_err_t - tip podataka (ESP-IDF) za predstavljanje grešaka ili statusa funkcija
       - u ovom slučaju vraća ESP_OK ako je WiFi povezan
   */
-esp_err_t wifi_rezultat = wifi_STA_povezivanje("mreza", "12345678");
+ 
+// Povezivanje na WiFi mrežu
+  //Ako želimo dinamičku IP adresu:
+  esp_err_t wifi_rezultat = wifi_STA_povezivanje("mreza", "12345678", false);
+  //Ako želimo statičku IP adresu (192.168.1.55):
+  //esp_err_t wifi_rezultat = wifi_STA_povezivanje("mreza", "12345678", true);
+  
 if (wifi_rezultat == ESP_OK)
 {
     printf("Uređaj je povezan na WiFi!\n");
