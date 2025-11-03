@@ -1,4 +1,4 @@
-v# ESP-IDF Projekt — Struktura i Osnove
+# ESP-IDF Projekt — Struktura i osnove
 
 ## ESP-IDF instalacija
 - [ESP-IDF instalacija](https://dl.espressif.com/dl/esp-idf/)
@@ -57,7 +57,10 @@ idf.py flash                # flash-aj firmware na uređaj
 idf.py monitor              # otvori serijski terminal
 idf.py fullclean            # potpuno čisti build direktorij i konfiguracije
 ```
-Dokumentacija: ESP-IDF Build System Guide
+
+
+sdkconfig se automatski generira nakon idf.py menuconfig
+sdkconfig.defaults može sadržavati zadane postavke (npr. veličina stacka, UART brzina, enable debug, itd.)
 
 ## 2. Komponente — modularna organizacija i zavisnosti (REQUIRES)
 ---
@@ -104,7 +107,6 @@ Component config → Hello component → [*] Enable Hello message
 
 ## 4. Partition Table
 ---
-Dokumentacija: Partition Tables Guide
 ```text
 Primjer partition_table/partition_table.csv:
 
@@ -119,12 +121,7 @@ Opis flash memorije:
     phy_init — inicijalizacija PHY-a (Wi-Fi)
     factory — glavna aplikacija
 
-## 5. sdkconfig i sdkconfig.defaults
----
-    sdkconfig se automatski generira nakon idf.py menuconfig
-    sdkconfig.defaults može sadržavati zadane postavke (npr. veličina stacka, UART brzina, enable debug, itd.)
-
-## 6. FreeRTOS i app_main()
+## 5. FreeRTOS i app_main()
 ---
 ESP-IDF automatski pokreće FreeRTOS nakon inicijalizacije.
 Funkcija app_main() postaje glavni FreeRTOS task.
@@ -159,7 +156,7 @@ void app_main(void)
     );
 }
 ```
-## 7. Alati u pozadini
+## 6. Alati u pozadini
 ---
 CMake - jezik za opisivanje build procesa (kako se program gradi iz .c i .h datoteka)
       - generira build sistem (npr. Makefile, ninja, Visual Studio project, itd.).
@@ -171,11 +168,11 @@ CMake - jezik za opisivanje build procesa (kako se program gradi iz .c i .h dato
 | Ninja                | izvršava stvarni build              |
 | esptool.py           | flash-a firmware na ESP32           |
 | idf.py               | glavni interfejs — poziva sve alate |
-| Toolchain (gcc, ar…) | kompajlira i linka koda             |
+| Toolchain (gcc, ar…) | kompajlira i linka kod              |
 
 
 
-## 8. Build i konfiguracijske datoteke
+## 7. Build i konfiguracijske datoteke
 ---
 ### .gitignore — preporučeno za Git projekte
 
