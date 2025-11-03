@@ -1,4 +1,4 @@
-# ESP-IDF Projekt — Struktura i Osnove
+v# ESP-IDF Projekt — Struktura i Osnove
 
 ## ESP-IDF instalacija
 - [ESP-IDF instalacija](https://dl.espressif.com/dl/esp-idf/)
@@ -105,14 +105,14 @@ Component config → Hello component → [*] Enable Hello message
 ## 4. Partition Table
 ---
 Dokumentacija: Partition Tables Guide
-
+```text
 Primjer partition_table/partition_table.csv:
 
 # Name,   Type, SubType, Offset,  Size, Flags
 nvs,      data, nvs,     0x9000,  0x5000,
 phy_init, data, phy,     0xE000,  0x1000,
 factory,  app,  factory, 0x10000, 1M,
-
+```
 Opis flash memorije:
 
     nvs — spremište za postavke
