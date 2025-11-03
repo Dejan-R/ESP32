@@ -47,8 +47,7 @@ project(ESP32_project_structure)                    # definira naziv projekta
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)   # uključuje ESP-IDF build sustav (automatski postavlja alatni lanac, putanje i detektira komponente)
 ```
 
-**idf.py** je glavni alat za rad s ESP-IDF projektom
-Najčešće idf.py naredbe:
+**idf.py** je glavni alat za rad s ESP-IDF projektom, najčešće idf.py naredbe:
 
 ```bash
 idf.py set-target esp32     # postavi ciljanu platformu (esp32...)
