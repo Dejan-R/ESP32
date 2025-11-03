@@ -1,0 +1,9 @@
+menu "Hello component configuration"
+
+config ENABLE_HELLO
+    bool "Enable Hello message"
+    default y
+    help
+        Ako je uključeno, prikazuje se 'Hello from component!'
+
+endmenu
