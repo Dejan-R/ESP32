@@ -1,6 +1,7 @@
 # ESP-IDF Projekt — Struktura i Osnove
 
 ## ESP-IDF instalacija
+- [ESP-IDF instalacija](https://dl.espressif.com/dl/esp-idf/)
 ---
 ## ESP-IDF Project Structure — primjer temeljne strukture ESP-IDF projekta
 
@@ -206,6 +207,5 @@ Log razina se može podesiti:
 menuconfig → Component config → Log output → Default log verbosity
 
 ## Reference
-- [ESP-IDF instalacija](https://dl.espressif.com/dl/esp-idf/)
 - [Build System Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/build-system.html)
 - [Partition Tables Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/partition-tables.html)
