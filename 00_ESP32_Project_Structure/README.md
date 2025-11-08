@@ -178,11 +178,40 @@ CMake - jezik za opisivanje build procesa (kako se program gradi iz .c i .h dato
 
 Preporučuje se ignorirati privremene i generirane datoteke:
 ```text
+# Build folder i generirani fajlovi
 build/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+*.elf
+*.bin
+*.map
+*.hex
+
+# Konfiguracija koju ne treba commitati
 sdkconfig
 sdkconfig.old
+
+# Editor / IDE fajlovi
 .vscode/
+.idea/
+*.code-workspace
+
+# Python cache
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Log i temporary fajlovi
+*.log
+*.tmp
+*.swp
+
+# OS-specific
+Thumbs.db
+.DS_Store
+
 ```
 ### Logging — debug poruke
 
